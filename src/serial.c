@@ -1,13 +1,11 @@
-
-
-#include "rprintf.c"
 #include "rprintf.h"
 
+//getting MU_IO address
+#define address 0x3F215040
 
-//getting MI_IO address
-#define address 0xFE215040
-
-void putc(int data) {
+int putc(int data) {
      unsigned int *mu_io = ( unsigned int*)address;
     *mu_io = (unsigned int)data; 
+    return 0;
 }
+
