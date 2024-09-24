@@ -1,15 +1,13 @@
-#include <stdint.h>
+
 
 #include "rprintf.c"
 #include "rprintf.h"
 
 
+//getting MI_IO address
+#define address 0xFE215040
 
-// Define the address for the MU_IO register
-
-#define address ((volatile uint32_t *)(0xFE215040))
-
-// Function to send a single character to the serial port
 void putc(int data) {
-    *address = (uint32_t)data;
+     unsigned int *mu_io = ( unsigned int*)address;
+    *mu_io = (unsigned int)data; 
 }
