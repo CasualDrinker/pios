@@ -101,7 +101,9 @@ int main() {
     struct list_element test4 = { NULL, 5555 };
     struct list_element test5 = { NULL, 55555 };
 
-    list_add(&head, &test, 1); //adding element test to 1st position
+  //  list_add(&head, &test, 1); //adding element test to 1st 
+    
+
    list_add(&head, &test2, 2); //adding element test2 to 2nd position
     list_add(&head, &test3, 4);
     list_add(&head, &test4, 10000); //adding element test4 10000th position. It just adds to the end of list. increasing list by 1
@@ -114,9 +116,9 @@ int main() {
 
     print_list(head); // Print the list
     
-    list_remove(&test2); //removes element with value 55, which is test2's value.
+    //list_remove(&test2); //removes element with value 55, which is test2's value.
 
-    print_list(head);
+  //  print_list(head);
 
     return 0;
 } 

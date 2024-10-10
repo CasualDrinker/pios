@@ -49,14 +49,14 @@ void kernel_main() {
 	
 	for (char *p = bssstart; p < bssend; p++)
 	{
-	//	*p = 0xFF;  //test case. // run multiple times in make debug
-	 	*p = 0;
+	 	*p = 0xFF;  //test case. // run multiple times in make debug
+	 	// *p = 0;
 	
 	}
 
 	unsigned int current_el = getEL();
 	
-	//putc('b'); 
+	putc('b'); 
  	//esp_printf(putc, "Integer test: %d\r\n", 42);
 	
 
