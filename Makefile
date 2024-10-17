@@ -17,6 +17,7 @@ OBJS = \
 	kernel_main.o \
 	serial.o \
 	rprintf.o\
+	mmusetup.S\
 
 OBJ = $(patsubst %,$(ODIR)/%,$(OBJS))
 
